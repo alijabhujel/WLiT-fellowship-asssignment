@@ -1,0 +1,36 @@
+<html>
+    <head>
+        Javascript Objects
+    </head>
+    <body>
+        <p id = "demo"></p>
+    </body>
+    <script>
+      var student = {
+      name:"Alija",
+      age:21,
+      studies:"Computer"
+
+      };
+      document.getElementById("demo").innerHTML = student.name + "of the age" + student.age +"studies" + student.studies;
+
+
+    </script>
+    <script>
+       var student = new Object();
+       student.name = "Alija", 
+    student.age=21,
+      student.studies="Computer";
+      document.getElementById("demo").innerHTML = student.name + "of the age" + student.age +"studies" + student.studies;
+
+    </script>
+
+    <script>
+        function student(name,age,studies){
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+         var student
+    </script>
+</html>

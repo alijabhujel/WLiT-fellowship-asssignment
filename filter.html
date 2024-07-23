@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Check and Filter Animals</title>
+</head>
+<body>
+    <script>
+        // Create an array of animals
+        const animals = ["dogs", "cats", "rabbits", "mice"];
+
+        // Check if each of these animals has an alphabet 'a'
+        animals.forEach(animal => {
+            console.log(`${animal}: ${animal.includes('a')}`);
+        });
+
+        // Create a new array by filtering out only those animals that do not have an 'a'
+        const filteredAnimals = animals.filter(animal => !animal.includes('a'));
+
+        // Log the new array
+        console.log("Filtered Animals:", filteredAnimals);
+    </script>
+</body>
+</html>

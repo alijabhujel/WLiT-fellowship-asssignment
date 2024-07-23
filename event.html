@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+    <style>
+        #colorDiv {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorDiv">Hello World!</div>
+    <input type="text" id="colorInput" placeholder="Enter a color">
+    <button onclick="changeColor()">Submit</button>
+
+    <script>
+        function changeColor() {
+            var color = document.getElementById('colorInput').value;
+            document.getElementById('colorDiv').style.color = color;
+        }
+    </script>
+</body>
+</html>
